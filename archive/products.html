@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Urbanist"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-cream-10 font-urban text-mamba-70">
+    <div class="max-w-6xl mx-auto p-6">
+      <div class="flex flex-wrap md:flex-nowrap gap-8">
+        <!-- Left Section: Image Gallery -->
+        <div class="w-full md:w-1/2">
+          <!-- Main Image -->
+          <div class="mb-4">
+            <img
+              id="main-image"
+              src="./img/p1.png"
+              alt="Product Image"
+              class="w-full h-auto rounded-lg shadow"
+            />
+          </div>
+          <!-- Thumbnail Images -->
+          <div class="flex gap-2">
+            <img
+              onclick="changeImage(this)"
+              src="./img/p1.png"
+              alt="Thumbnail 1"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="./img/p2.png"
+              alt="Thumbnail 1"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="./img/p3.png"
+              alt="Thumbnail 2"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="./img/p4.png"
+              alt="Thumbnail 3"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="./img/p5.png"
+              alt="Thumbnail 4"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="./img/p1.png"
+              alt="Thumbnail 1"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <!-- Right Section: Product Info -->
+        <div class="w-full md:w-1/2 space-y-4">
+          <!-- Product Category -->
+          <p class="text-sm text-mamba-70">Cottonello Men's Linen Wear</p>
+          <!-- Product Name -->
+          <h1 class="text-2xl font-kaisei font-bold text-mamba-70">
+            Aaman Linen Shirt by Cottonello:
+          </h1>
+          <p class="text-lg">Men's Linen Shirt Short Sleeve</p>
+          <!-- Price -->
+          <p class="text-2xl font-bold text-rustic-90">Rp. 245.000</p>
+          <!-- Order Options -->
+          <p class="text-sm">Choose where you want to order:</p>
+          <div class="grid grid-cols-2 gap-2">
+            <button
+              class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg"
+            >
+              <img src="./icon/shopee.png" alt="Shopee" class="w-5 h-5" />
+              Shopee
+            </button>
+            <button
+              class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg"
+            >
+              <img src="./icon/tokopedia.png" alt="Tokopedia" class="w-5 h-5" />
+              Tokopedia
+            </button>
+          </div>
+          <!-- Stay on site -->
+          <p class="text-sm">Or stay on site:</p>
+          <!-- Color Options -->
+          <p class="text-sm">Choose Color:</p>
+          <div class="flex gap-2">
+            <button class="border border-mamba-70 p-2 rounded-lg">Hitam</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">Putih</button>
+          </div>
+          <!-- Size Options -->
+          <p class="text-sm">Size:</p>
+          <div class="flex gap-2">
+            <button class="border border-mamba-70 p-2 rounded-lg">S</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">M</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">L</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">XL</button>
+          </div>
+          <!-- Add to Cart -->
+          <div class="flex items-center gap-4">
+            <button class="flex-1 bg-rustic-60 text-white py-2 rounded-lg">
+              Add to Cart
+            </button>
+            <div class="flex items-center gap-2">
+              <button class="border border-mamba-70 px-2 rounded">-</button>
+              <span>1</span>
+              <button class="border border-mamba-70 px-2 rounded">+</button>
+            </div>
+          </div>
+          <!-- Checkout Now -->
+          <button class="w-full bg-rustic-60 text-white py-3 rounded-lg">
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto p-6">
+      <!-- Product Page Content (already provided) -->
+
+      <!-- Dropdown Section -->
+      <div class="mt-12 space-y-4">
+        <!-- Dropdown 1: Description -->
+        <div class="border border-mamba-70 rounded-lg">
+          <button
+            onclick="toggleDropdown('dropdown1')"
+            class="w-full flex justify-between items-center p-4 text-mamba-70 font-bold"
+          >
+            <span>Description</span>
+            <img
+              id="icon-dropdown1"
+              src="/path/to/icon-chevron-down.svg"
+              alt="Expand"
+              class="w-4 h-4"
+            />
+          </button>
+          <div id="dropdown1" class="hidden px-4 py-2 text-sm">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              quis lorem ut libero malesuada feugiat. Proin eget tortor risus.
+              Vivamus suscipit tortor eget felis porttitor volutpat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dropdown 2: Additional Information -->
+        <div class="border border-mamba-70 rounded-lg">
+          <button
+            onclick="toggleDropdown('dropdown2')"
+            class="w-full flex justify-between items-center p-4 text-mamba-70 font-bold"
+          >
+            <span>Additional Information</span>
+            <img
+              id="icon-dropdown2"
+              src="/path/to/icon-chevron-down.svg"
+              alt="Expand"
+              class="w-4 h-4"
+            />
+          </button>
+          <div id="dropdown2" class="hidden px-4 py-2 text-sm">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              porttitor lectus nibh. Curabitur aliquet quam id dui posuere
+              blandit. Donec sollicitudin molestie malesuada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function changeImage(thumbnail) {
+        const mainImage = document.getElementById("main-image");
+        mainImage.src = thumbnail.src;
+      }
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        const icon = document.getElementById(`icon-${id}`);
+
+        if (dropdown.classList.contains("hidden")) {
+          dropdown.classList.remove("hidden");
+          icon.src = "/path/to/icon-chevron-up.svg"; // Change to up icon
+        } else {
+          dropdown.classList.add("hidden");
+          icon.src = "/path/to/icon-chevron-down.svg"; // Change to down icon
+        }
+      }
+    </script>
+  </body>
+</html>

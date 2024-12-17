@@ -1,0 +1,141 @@
+Berikut data taiolwind css untuk digunakan pada perintah berikutnya /** @type
+{import('tailwindcss').Config} */ module.exports = { content: ['index.html'],
+theme: { extend: { fontFamily: { kaisei: ['"Kaisei Tokumin"', 'serif'], //
+Custom font for headings urban: ['"Urbanist"', 'sans-serif'], // Default body
+font }, }, colors: { transparent: 'transparent', current: 'currentColor', white:
+'#ffffff', cream: { 10: '#FDFBF6', 70: '#CDC6AF', 80: '#A49E8C', 90: '#7B7769',
+}, rustic: { 60: '#A26644', 90: '#513322' }, mamba: { 70: '#6F6C57', }, }, },
+plugins: [], };
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;700&family=Urbanist:wght@400;500;700&display=swap");
+    </style>
+  </head>
+  <body class="bg-cream-10 font-urban text-mamba-70">
+    <div class="max-w-6xl mx-auto p-6">
+      <div class="flex flex-wrap md:flex-nowrap gap-8">
+        <!-- Left Section: Image Gallery -->
+        <div class="w-full md:w-1/2">
+          <!-- Main Image -->
+          <div class="mb-4">
+            <img
+              id="main-image"
+              src="/path/to/main-image.jpg"
+              alt="Product Image"
+              class="w-full h-auto rounded-lg shadow"
+            />
+          </div>
+          <!-- Thumbnail Images -->
+          <div class="flex gap-2">
+            <img
+              onclick="changeImage(this)"
+              src="/path/to/thumbnail1.jpg"
+              alt="Thumbnail 1"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="/path/to/thumbnail2.jpg"
+              alt="Thumbnail 2"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="/path/to/thumbnail3.jpg"
+              alt="Thumbnail 3"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="/path/to/thumbnail4.jpg"
+              alt="Thumbnail 4"
+              class="w-20 h-20 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <!-- Right Section: Product Info -->
+        <div class="w-full md:w-1/2 space-y-4">
+          <!-- Product Category -->
+          <p class="text-sm text-mamba-70">Cottonello Men's Linen Wear</p>
+          <!-- Product Name -->
+          <h1 class="text-2xl font-kaisei font-bold text-mamba-70">
+            Aaman Linen Shirt by Cottonello:
+          </h1>
+          <p class="text-lg">Men's Linen Shirt Short Sleeve</p>
+          <!-- Price -->
+          <p class="text-2xl font-bold text-rustic-90">Rp. 245.000</p>
+          <!-- Order Options -->
+          <p class="text-sm">Choose where you want to order:</p>
+          <div class="grid grid-cols-2 gap-2">
+            <button
+              class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg"
+            >
+              <img
+                src="/path/to/shopee-logo.png"
+                alt="Shopee"
+                class="w-5 h-5"
+              />
+              Shopee
+            </button>
+            <button
+              class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg"
+            >
+              <img
+                src="/path/to/tokopedia-logo.png"
+                alt="Tokopedia"
+                class="w-5 h-5"
+              />
+              Tokopedia
+            </button>
+          </div>
+          <!-- Stay on site -->
+          <p class="text-sm">Or stay on site:</p>
+          <!-- Color Options -->
+          <p class="text-sm">Choose Color:</p>
+          <div class="flex gap-2">
+            <button class="border border-mamba-70 p-2 rounded-lg">Hitam</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">Putih</button>
+          </div>
+          <!-- Size Options -->
+          <p class="text-sm">Size:</p>
+          <div class="flex gap-2">
+            <button class="border border-mamba-70 p-2 rounded-lg">S</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">M</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">L</button>
+            <button class="border border-mamba-70 p-2 rounded-lg">XL</button>
+          </div>
+          <!-- Add to Cart -->
+          <div class="flex items-center gap-4">
+            <button class="flex-1 bg-rustic-60 text-white py-2 rounded-lg">
+              Add to Cart
+            </button>
+            <div class="flex items-center gap-2">
+              <button class="border border-mamba-70 px-2 rounded">-</button>
+              <span>1</span>
+              <button class="border border-mamba-70 px-2 rounded">+</button>
+            </div>
+          </div>
+          <!-- Checkout Now -->
+          <button class="w-full bg-rustic-90 text-white py-3 rounded-lg">
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function changeImage(thumbnail) {
+        const mainImage = document.getElementById("main-image");
+        mainImage.src = thumbnail.src;
+      }
+    </script>
+  </body>
+</html>

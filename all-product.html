@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Selasa di Bali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Urbanist"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-mamba-70 text-white">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <!-- Logo -->
+        <h1 class="text-lg font-kaisei font-bold">Selasa di Bali</h1>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#" class="hover:text-gray-200 font-kaisei">Home</a></li>
+          <li><a href="#" class="hover:text-gray-200">All Product</a></li>
+          <li><a href="#" class="hover:text-gray-200">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-200">About Us</a></li>
+        </ul>
+
+        <!-- Right Buttons -->
+        <div class="flex items-center space-x-4">
+          <button
+            class="flex items-center px-4 py-2 bg-white text-mamba-70 font-medium rounded"
+          >
+            <span class="material-icons">language</span> IDR | Indonesia
+          </button>
+          <button><span class="material-icons">shopping_cart</span></button>
+          <button><span class="material-icons">account_circle</span></button>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <!-- Background Image -->
+      <div class="relative">
+        <img
+          src="./img/all-product-cover.png"
+          alt="Cottonello Men's Linen Wear"
+          class="object-cover w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+      </div>
+
+      <!-- Content with Spacing -->
+      <div class="container mx-auto items-center py-4 px-6">
+        <h1 class="text-3xl font-kaisei font-bold text-mamba-70">
+          Cottonello Men's Linen Wear
+        </h1>
+        <h2 class="text-2xl font-urban text-rustic-60 mb-4">
+          Shirts, Shorts & Pants
+        </h2>
+        <p class="text-base font-urban text-mamba-70 leading-relaxed">
+          Introducing Cottonello Men's Linen Wear: Embrace Bali-Inspired Colors
+          and Unmatched Comfort. Meticulously crafted with care, our collection
+          offers a diverse selection of colors and features high-quality
+          linen–cotton blend fabric, ensuring both style and comfort. Experience
+          unparalleled comfort with Cottonello Men's Linen Wear. The breathable
+          and soft linen-cotton blend fabric keeps you cool and comfortable
+          throughout the day, while its superior craftsmanship guarantees
+          lasting durability.
+        </p>
+        <p class="text-base font-urban text-mamba-70 leading-relaxed py-2">
+          Inspired by the enchanting beauty of Bali, our collection captures the
+          essence of the island's vibrant spirit. Whether you're strolling
+          through the bustling streets of Seminyak or unwinding in the serene
+          retreats of Nusa Dua, our Cottonello Men's Linen Wear is designed to
+          elevate your style on any occasion.
+        </p>
+        <p class="text-base font-urban text-mamba-70 leading-relaxed py-2">
+          Choose from our wide range of Bali-inspired colors, mirroring the
+          captivating landscapes of Seminyak and the tranquil ambiance of Nusa
+          Dua. From the soothing tones of the ocean to the vivid hues of
+          tropical flora, our collection offers a color palette to suit every
+          preference. Make a statement with bold shades or exude timeless
+          elegance with classic neutrals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter & Category -->
+    <section class="bg-mamba-70 my-15">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-10">
+        <!-- Bagian Kiri: Collections -->
+        <div>
+          <!-- Heading dengan Icon -->
+          <div class="flex items-center mb-4">
+            <img
+              src="./icon/gift.png"
+              alt="Collections Icon"
+              class="mr-2 px-2"
+            />
+            <h2 class="text-sm md:text-lg font-kaisei font-bold text-white">
+              Collections
+            </h2>
+          </div>
+          <!-- Garis -->
+          <div class="h-px w-full bg-white mb-4"></div>
+          <!-- Radio Input -->
+          <div
+            class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0"
+          >
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="collection"
+                class="accent-cream-90 w-4 h-4"
+                checked
+              />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Shirts, Shorts & Pants</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="collection"
+                class="accent-cream-90 w-4 h-4"
+              />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Ethnic Series</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="collection"
+                class="accent-cream-90 w-4 h-4"
+              />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Wayang Series</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan: Category -->
+        <div>
+          <!-- Heading dengan Icon -->
+          <div class="flex items-center mb-4">
+            <img
+              src="./icon/view-grid.png"
+              alt="Category Icon"
+              class="mr-2 px-2"
+            />
+            <h2 class="text-sm md:text-lg font-kaisei font-bold text-white">
+              Category
+            </h2>
+          </div>
+          <!-- Garis -->
+          <div class="h-px w-full bg-white mb-4"></div>
+          <!-- Checkbox Input -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 gap-y-3 md:gap-y-4 gap-x-6"
+          >
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Shorts</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Shirts</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Pants</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Brocade Shirts</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Tees</span
+              >
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="accent-cream-90 w-4 h-4" />
+              <span class="text-sm md:text-base px-1 text-white font-urban"
+                >Label</span
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="bg-cream-10 py-12">
+      <!-- Cards Container -->
+      <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c1.png"
+            alt="Ahimsa Linen Long Pants"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Ahimsa Linen Long Pants Men's Linen Long Pants
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 245.000</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c2.png"
+            alt="Ahimsa Linen Long Pants"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Ahimsa Linen Long Pants Men's Linen Long Pants
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 245.000</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c3.png"
+            alt="Annantara Linen Long Sleeve Shirt"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Annantara Linen Long Sleeve Shirt with Spread Collar
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 385.000</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c4.png"
+            alt="Bima Brocade Shirt"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Bima Brocade Shirt
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 879.000</p>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c1.png"
+            alt="Ahimsa Linen Long Pants"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Ahimsa Linen Long Pants Men's Linen Long Pants
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 245.000</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c2.png"
+            alt="Ahimsa Linen Long Pants"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Ahimsa Linen Long Pants Men's Linen Long Pants
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 245.000</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c3.png"
+            alt="Annantara Linen Long Sleeve Shirt"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Annantara Linen Long Sleeve Shirt with Spread Collar
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 385.000</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden mx-auto h-[550px] w-full max-w-[300px] transform transition-transform duration-300 ease-out hover:scale-105"
+        >
+          <img
+            src="./img/c4.png"
+            alt="Bima Brocade Shirt"
+            class="w-full h-[70%] object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-bold font-kaisei text-mamba-70">
+              Bima Brocade Shirt
+            </h3>
+            <p class="mt-2 text-rustic-60 font-urban">Rp. 879.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-mamba-70 text-white py-16 px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-auto">
+        <!-- Section 1: Company Info -->
+        <div>
+          <h2 class="text-2xl font-kaisei font-bold leading-tight mb-4">
+            Selasa di Bali
+          </h2>
+          <p class="text-lg font-urban">Bali, Indonesia</p>
+        </div>
+        <!-- Section 2: Menu Links -->
+        <div>
+          <h3 class="text-xl font-kaisei font-semibold mb-4">Menu</h3>
+          <ul class="space-y-2 text-sm font-urban">
+            <li><a href="#" class="hover:underline">Products</a></li>
+            <li><a href="#" class="hover:underline">Collections</a></li>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Location</a></li>
+          </ul>
+        </div>
+        <!-- Section 3: Collections -->
+        <div>
+          <h3 class="text-xl font-kaisei font-semibold mb-4">Collections</h3>
+          <ul class="space-y-2 text-sm font-urban">
+            <li><a href="#" class="hover:underline">Mens Linen Wear</a></li>
+            <li><a href="#" class="hover:underline">Ethnic Series</a></li>
+            <li><a href="#" class="hover:underline">Premium Series</a></li>
+            <li><a href="#" class="hover:underline">Wayang Series</a></li>
+          </ul>
+        </div>
+        <!-- Section 4: Help Center -->
+        <div>
+          <h3 class="text-xl font-kaisei font-semibold mb-4">Help Center</h3>
+          <ul class="space-y-2 text-sm font-urban">
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Refund Policy</a></li>
+            <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+            <li>
+              <a href="#" class="hover:underline">Shipping International</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col sm:flex-row justify-between items-start">
+        <!-- Contact Info -->
+        <div class="mb-8 sm:mb-0">
+          <h2 class="text-xl font-bold mb-2 font-kaisei">Contact Inquiries</h2>
+          <p class="font-urban">
+            Email:
+            <a href="mailto:bintang@selasadibali.com" class="hover:underline"
+              >bintang@selasadibali.com</a
+            >
+          </p>
+          <p class="font-urban">
+            WhatsApp/Telegram:
+            <a href="tel:+62811225108" class="hover:underline">+62811225108</a>
+          </p>
+          <div class="flex gap-4 mt-4">
+            <img src="./icon/wa.png" alt="Icon" class="w-8 h-8 object-cover" />
+            <i class="bi bi-0-square"></i>
+            <img src="./icon/ig.png" alt="Icon" class="w-8 h-8 object-cover" />
+          </div>
+        </div>
+        <!-- Payment Methods -->
+        <div>
+          <h3 class="text-xl font-kaisei font-semibold mb-4">Payment Method</h3>
+          <div class="flex gap-4">
+            <img
+              src="./icon/mandiri.png"
+              alt="Payment Method"
+              class="w-24 h-6 object-cover"
+            />
+            <img
+              src="./icon/paypal.png"
+              alt="Payment Method"
+              class="w-16 h-6 object-cover"
+            />
+          </div>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <h4 class="font-semibold">You can also order via:</h4>
+            <div class="flex gap-4">
+              <img
+                src="./icon/shopee.png"
+                alt="Order via"
+                class="w-10 h-6 object-cover"
+              />
+              <img src="./icon/" alt="Order via" class="w-8 h-6 object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
